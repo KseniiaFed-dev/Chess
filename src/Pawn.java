@@ -31,11 +31,11 @@ public class Pawn extends ChessPiece {
 
 
         if (color.equals("White")) {
-            // Пешка может двигаться на 1 или 2 поля вперед с начальной позиции
+            
             if (line == 1 && toLine == 3 && column == toColumn) {
-                return true;  // Первый ход на 2 клетки
+                return true; 
             } else if (toLine == line + 1 && column == toColumn) {
-                return true;  // Ход на 1 клетку вперед
+                return true;  
             }
         }
 
